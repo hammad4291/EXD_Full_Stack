@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-nav
+{
+    color: #fbf2c0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #43281c;
+    font-size: 1.2rem;
+    height: 7.5rem;
+}
+.main-nav img
+{
+    width: 3rem;
+    margin:5px;
+}
+.box
+{
+    background-color: #eee1d5;
+}
+.main-div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "items name"
+                         "items payment"
+                         "items payment";
+    gap: 1rem;
+    margin: 2rem;
+}
+.items
+{
+    grid-area:items;
+}
+.name{
+    grid-area:name;
+}
+.payment
+{
+    grid-area:payment;
+}
+.box{
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.box h2
+{
+    color: #885a2d;
+    font-weight: normal;
+}
+.list-items
+{
+    list-style-type: none;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.item-options-list
+{
+    list-style-type: none;
+}
+.list-item
+{
+    /* background-color: #fff; */
+    margin: 0.5rem;
+    display: grid;
+    min-height: 7rem;
+    height: auto;
+    border-bottom: 2px solid #DDB892;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: "quantity title price"
+                         "quantity options options";
+}
+.item-quantity
+{
+    grid-area:quantity;
+}
+.item-title
+{
+    grid-area:title;
+    font-weight: bold;
+}
+.item-price
+{
+    grid-area:price;
+    font-weight: bold;
+}
+.item-options-list
+{
+    grid-area:options;
+    color: #B08968;
+    /* text-align: left; */
+}
+.example-group {
+    position: relative;
+    display: inline-block;
+    width: 95%;
+    margin:1rem;
+  }
+
+  .example-input {
+    border-color: crimson;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px #885a2d solid;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+
+  .input-label {
+    background-color: #eee1d5;
+    color: #885a2d;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+  }
