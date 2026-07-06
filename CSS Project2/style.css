@@ -15,12 +15,12 @@
     justify-content: center;
     align-items: center;
     background-color: #43281c;
-    font-size: 1.2rem;
-    height: 7.5rem;
+    font-size: 0.75rem;
+    height: 4rem;
 }
 .main-nav img
 {
-    width: 3rem;
+    width: 1.15rem;
     margin:5px;
 }
 .box
@@ -36,18 +36,22 @@
                          "items payment"
                          "items payment";
     gap: 1rem;
+    max-height: 45vh;
     margin: 2rem;
 }
 .items
 {
     grid-area:items;
+    height: 100%;
 }
 .name{
     grid-area:name;
+    height: 100%;
 }
 .payment
 {
     grid-area:payment;
+    height: 100%;
 }
 .box{
     box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
@@ -57,6 +61,7 @@
 .box h2
 {
     color: #885a2d;
+    font-size: 0.8rem;
     font-weight: normal;
 }
 .list-items
@@ -65,6 +70,7 @@
     padding: 0.5rem;
     width: 100%;
     font-size: 1.2rem;
+    height: 100%;
 }
 .item-options-list
 {
@@ -75,8 +81,10 @@
     /* background-color: #fff; */
     margin: 0.5rem;
     display: grid;
-    min-height: 7rem;
+    min-height: 3rem;
     height: auto;
+    font-size: 0.8rem;
+    
     border-bottom: 2px solid #DDB892;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-areas: "quantity title price"
@@ -106,7 +114,8 @@
     position: relative;
     display: inline-block;
     width: 95%;
-    margin:1rem;
+
+    margin:0.8rem;
   }
 
   .example-input {
@@ -114,7 +123,8 @@
     padding: 8px;
     border-radius: 5px;
     width: 100%;
-    border: 2px #885a2d solid;
+    height: 31px;
+    border: 1.5px #885a2d solid;
     padding: 8px;
     border-radius: 20px;
     font-size: 1rem;
@@ -124,9 +134,47 @@
   .input-label {
     background-color: #eee1d5;
     color: #885a2d;
-    font-size: 11px;
+    font-size: 0.5rem;
     position: absolute;
     left: 25px;
     top: -7px;
     padding: 0 2px;
+  }
+  .total_box
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+  .values
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .checkout
+  {
+    background-color: #deb993;
+    border: none;
+    padding: 10px 30px;
+    width: 100%;
+    height: 30px;
+    border-radius: 100px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .checkout:hover
+  {
+    background-color: #885a2d;
+    color: #fbf2c0;
+    border: 2px solid #f1e8b5;
   }
